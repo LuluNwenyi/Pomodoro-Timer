@@ -9,7 +9,7 @@ PURPLE = "#ebd4fd"
 FONT_NAME = "Montserrat"
 VIOLET = "#7b2cbf"
 
-WORK_MIN = 1
+WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 15
 reps=0
