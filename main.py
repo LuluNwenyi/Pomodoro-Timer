@@ -1,5 +1,7 @@
 from tkinter import *
 import math
+from playsound import playsound
+#from AppKit import NSSound
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -34,22 +36,28 @@ def start_timer():
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
 
+    sound = "/Users/user/Desktop/GUI Practice/My_Pomodoro_Timer.py/pristine.mp3"
+    sound = sound.replace(" ", "%20")
+
+
     #for 8th rep
     if reps % 8 ==0:
          count_down(long_break_sec)
          title_label.config(text="Break", fg= RED)
+         playsound(sound)
+
 
      #for 2nd,4th,6th rep
     elif reps % 2==0:
         count_down(short_break_sec)
         title_label.config(text="Break", fg= PINK)
+        playsound(sound)
     
     #for 1st, 3rd, 5th or 7th rep
     else:
         count_down(work_sec)
         title_label.config(text="Work", fg= VIOLET)
-
-
+        playsound(sound) 
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
@@ -82,11 +90,12 @@ def count_down(count):
 window = Tk()
 window.title("My Pomodoro Timer")
 #window.geometry("500x500")
-window.config(padx=50, pady=50, bg=PURPLE)
+window.config(padx=1, pady=1, bg=PURPLE)
 window.resizable(0,0)
 
 title_label= Label(text="Timer", fg=BROWN, bg=PURPLE, font=(FONT_NAME, 45) )
 title_label.grid(column=1, row=0)
+
 
 
 canvas=Canvas(width=250, height=224, bg=PURPLE, highlightthickness=0)  #highlightthickness takes away the border around the canvas
