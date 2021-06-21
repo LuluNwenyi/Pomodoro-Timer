@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1000px;
+    max-height: 1000px;
+    background-color:   #fff;
+}
+/*  */
+
+    .logo{
+        position: absolute;
+        width: 199px;
+        height: 50px;
+        left: 90px;
+        top: 48px;
+        
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 50px;
+        /* identical to box height */
+        
+        color: #000000;
+    }
+
+    .github-link{
+        /* Auto Layout */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        
+        position: absolute;
+        width: 139px;
+        height: 60px;
+        left: 1170px;
+        top: 38px;
+        
+        background: #F1F1F1;
+        border-radius: 8px;
+    }
+
+    .github-link i{
+        position: absolute;
+        top: 24px;
+        left: 20px;
+    }
+
+    .pt-sq2-texts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        
+        position: absolute;
+        width: 838px;
+        height: 233px;
+        left: 300px;
+        top: 244px;
+    }
+
+    .pt-sq2-texts h1{
+        position: static;
+        width: 838px;
+        height: 104px;
+        left: 0px;
+        top: 0px;
+        
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        
+        color: #1E1E1E;
+        
+        /* Inside Auto Layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 12px 0px;
+    }
+
+    .pt-sq2-texts p{
+        position: static;
+        width: 838px;
+        height: 117px;
+        left: 0px;
+        top: 116px;
+        
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 39px;
+        /* or 162% */
+        
+        text-align: center;
+        letter-spacing: 0.01em;
+        
+        color: #565656;
+        
+        /* Inside Auto Layout */
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 12px 0px;
+    }
+
+    span{
+        color: rgb(172, 6, 6);
+        font-style: italic;
+    }
+
+    button{
+        border: none;
+        border-radius: 5px;
+        background-color: #000;
+        color: #FFFF;
+        cursor: pointer;
+    }
+    
+
+/* BUTTON MACOS */
+
+    .mac button{
+        position: absolute;
+        width: 320px;
+        height: 60px;
+        left: 560px;
+        top: 528px;
+    }
+
+/* BUTTON WINDOWS */
+
+    .win button{
+        position: absolute;
+        width: 320px;
+        height: 60px;
+        left: 560px;
+        top: 613px;
+    }
+
+    /* ICONS */
+    
+    i{
+        margin-right: 3em;
+    }
+
+/* SMALL TEXT */
+
+    .small-text{
+        position: absolute;
+        width: 613px;
+        height: 23px;
+        left: 413px;
+        bottom: 30px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #000000;
+    }
