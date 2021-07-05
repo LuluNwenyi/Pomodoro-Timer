@@ -12,7 +12,7 @@ app = Flask(__name__)
 ######################################
 #### wheremy file is from ############
 ######################################
-timer_app = "/Users/user/Desktop/pomdoro_landing_page/static/Pomodoro Timer.zip"
+timer_app = "/Users/user/Desktop/GUI Practice/My_Pomodoro_Timer.py/landing_page/static/Pomodoro Timer.zip"
 
 
 #########################
