@@ -5,15 +5,14 @@
 from flask import Flask
 from flask import render_template, send_from_directory, url_for, send_file
 from werkzeug.exceptions import abort
-import zipfile
-import pathlib
+
 
 app = Flask(__name__)
 
 ######################################
 #### where my file is from ############
 ######################################
-timer = "/Users/user/Desktop/GUI Practice/My_Pomodoro_Timer.py/landing_page/static/Pomodoro Timer.dmg"
+timer = "landing_page/static/Pomodoro Timer.dmg"
 
 
 #########################
