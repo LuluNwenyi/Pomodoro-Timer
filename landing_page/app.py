@@ -12,7 +12,7 @@ app = Flask(__name__)
 ######################################
 #### where my file is from ############
 ######################################
-timer = "landing_page/static/Pomodoro Timer.dmg"
+path = "Pomodoro Timer.dmg"
 
 
 #########################
@@ -28,7 +28,7 @@ def index():
 @app.route('/download', methods=['GET', 'POST'])
 def return_files():
     try:
-        return send_file(timer, as_attachment=True)
+        return send_file(path, as_attachment=True)
 
     except FileNotFoundError:
         abort(404)
