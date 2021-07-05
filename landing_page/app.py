@@ -3,16 +3,17 @@
 #########################
 
 from flask import Flask
-from flask import render_template, send_from_directory, url_for
-from flask.helpers import send_file
+from flask import render_template, send_from_directory, url_for, send_file
 from werkzeug.exceptions import abort
+import zipfile
+import pathlib
 
 app = Flask(__name__)
 
 ######################################
-#### wheremy file is from ############
+#### where my file is from ############
 ######################################
-timer_app = "/Users/user/Desktop/GUI Practice/My_Pomodoro_Timer.py/landing_page/static/Pomodoro Timer.zip"
+timer = "/Users/user/Desktop/GUI Practice/My_Pomodoro_Timer.py/landing_page/static/Pomodoro Timer.dmg"
 
 
 #########################
@@ -28,7 +29,7 @@ def index():
 @app.route('/download', methods=['GET', 'POST'])
 def return_files():
     try:
-        return send_file(timer_app, as_attachment=True)
+        return send_file(timer, as_attachment=True)
 
     except FileNotFoundError:
         abort(404)
